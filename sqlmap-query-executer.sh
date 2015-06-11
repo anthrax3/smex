@@ -105,18 +105,11 @@ if [ $confirm == "no" ]
 	fi
 
 
-
-###############
-#echo "replacer"
-
-#echo $query |replace "'" "\'"
-
  
-#echo $query |replace '"' '\"'
-
-###############
-
-echo ""
+ 
+ 
+ 
+ echo ""
 echo  -e  "\e[32m Exeucting {sqlmap $sqlmap_query  --sql-query =\"$query\" $batch}"
  
 
