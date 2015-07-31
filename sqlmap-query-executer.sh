@@ -6,8 +6,8 @@
 # blue \e[34m
 # yellow \e[33m
 clear
-
-#initalizing default values
+ 
+#initalizing default vars
 attack_type="url"
 file_path=""
 url=""
@@ -15,6 +15,7 @@ sqlmap_query=""
 batch="--batch"
 com="Yes"
 
+#Title 
 echo -e "\e[33m-------------------------------------------"
 echo -e "\e[33m------SqlMap Query Executer ---------------"
 echo -e "\e[33m------By http://twitter.com/YasserGersy ---"
@@ -35,7 +36,7 @@ then
 			echo ""
 			echo -e "\e[32m File existed" 
 			sqlmap_query=" -r "$file_path
-		else 
+	else 
 			echo "" 
 			echo -e "\e[1m \e[31m File not existed \e[0m"
 			exit
@@ -50,12 +51,14 @@ else
 	if [[ $url =~ $regex ]]
 		then 
     			echo -e "\e[32m URL valid"
-		else
+	else
     			echo -e "\e[1m \e[31m Invalid URL \e[0m"
 			exit
 	fi	
 
 fi 
+
+
 echo ""
 echo -e "\e[39m Enter query :"
 read query
